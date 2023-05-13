@@ -5,80 +5,58 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+
 /*
-# 게임의 룰
-1. 가로줄 중복 안됨
-2. 세로줄 중복 안됨
-3. 정사각형 중복 안됨
+기본적인 스도쿠 룰에
+인접한 짝 조건 추가
 
-4. 도미노 타일은 (1~9)X(1~9)의 모든 가능한 쌍이 포함되어야한다. 순서 상관없다
-5. 겹쳐지면 안된다.
+아래 오른쪽을 향해 순차적 전체 탐색 int idx
+백트래킹 전략
 
-# 입력
-1. 채워져 있는 도미노 수는 10~ 35
-2. 위치는 A1과 같은 형식 : 알파벳 row, 숫자 col
-3. 그리고 쭉 초기 박힌 값들 불러줌
-4. 0이면 끝남
+짝 체크 boolean[][]
+스도쿠 룰 체크하는 함수 추가
 
-# 전략
-일단 비어있는 칸 = 0
-dfs 백트래킹 전략
-
-visited_domino 단순 2차원 boolean 배열
-스도쿠 룰을 검사하는 함수
-dfs에는 idx를 매개변수로 넘겨줌 - > 0~ 81
-
+맵은 항상 9*9
  */
 class Main{
-
-    static boolean[][] isMarkedDom;
+    static boolean[][] marked;
     static int[][] map;
+    static boolean flag = false;
+
+
+    static int[] dRow = {1, 0};
+    static int[] dCol = {0, 1};
+
     static int cnt = 1;
+    public static void main(String[] args) throws IOException{
 
-    static int[] dRow = new int[]{1, 0}; //여기 오답
-    static int[] dCol = new int[]{0, 1};
-
-    static boolean flag; //여기 오답
-    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int repeat;
-        while (true){
-            //init
-            isMarkedDom = new boolean[10][10];
+        int n = -1;
+        while (true) {
+            n = Integer.parseInt(br.readLine());
+            if (n==0) break;
+
             map = new int[9][9];
+            marked = new boolean[10][10];
 
-            //input
-            repeat = Integer.parseInt(br.readLine());
-            if (repeat == 0 ){ //종료 사인
-                break;
-            }
-
-            //초기 도미노 배정
-            for (int i = 0; i < repeat; i++) {
+            for (int i = 0; i < n; i++) {
                 StringTokenizer st = new StringTokenizer(br.readLine());
-                int U  = Integer.parseInt(st.nextToken());
-                char[] UL = st.nextToken().toCharArray();
+                int U = Integer.parseInt(st.nextToken());
+                char[] LU = st.nextToken().toCharArray();
                 int V = Integer.parseInt(st.nextToken());
-                char[] VL = st.nextToken().toCharArray();
+                char[] LV = st.nextToken().toCharArray();
 
-                //register
-                map[UL[0] - 'A'][UL[1] - '1'] = U;
-                map[VL[0] - 'A'][VL[1] - '1'] = V;
-
-                isMarkedDom[U][V] =true;
-                isMarkedDom[V][U] =true;
-
+                marked[U][V] = true;
+                marked[V][U] = true;
+                map[LU[0] - 'A'][LU[1] - '1'] = U;
+                map[LV[0] - 'A'][LV[1] - '1'] = V;
             }
-            //초기 숫자 배정
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            for (int i = 1; i < 10; i++) {
-                char[] chars = st.nextToken().toCharArray();
-                map[chars[0]-'A'][chars[1]-'1'] = i;
+            String[] s = br.readLine().split(" ");
+            for (int i = 0; i < 9; i++) {
+                char[] chars = s[i].toCharArray();
+                map[chars[0]-'A'][chars[1] - '1'] = i+1;
             }
-
-
             flag = false;
-            //dfs call
             dfs(0);
             cnt++;
 
@@ -89,90 +67,95 @@ class Main{
 
     /**
      *
-     * @param idx : 0~80 까지 인덱스를 의미함
+     * @param idx : 0~ 80
      */
     public static void dfs(int idx){
-        if (idx == 81){ //마지막까지 다 둘러봄
-            if (flag==true) return; //여기 오답
-            flag =true;
+        //마지막 넘었는지 체크
+        if (idx > 80){
+            if (flag) return;
+            flag = true;
+            //print
             StringBuffer sb = new StringBuffer(90);
-            //printing map
-            sb.append("Puzzle ");
-            sb.append(cnt);
-            sb.append("\n");
-            for (int i = 0; i < 9; i++) {
-                for (int j = 0; j < 9; j++) {
-                    sb.append(map[i][j]);
+            sb.append(String.format("Puzzle %d\n", cnt));
+            for (int row = 0; row < 9; row++) {
+                for (int col = 0; col < 9; col++) {
+                    sb.append(map[row][col]);
                 }
                 sb.append("\n");
             }
             System.out.print(sb);
-            return; //여기 오답
-        }
-
-        //마지막이 아니면
-        int row = idx/9;
-        int col = idx%9;
-
-        //만약 해당 위치에 값이 있으면 스킵
-        if (map[row][col] != 0){
-            dfs(idx+1);
             return;
         }
 
+        int curRow = idx / 9;
+        int curCol = idx % 9;
+
+        //값 있는지 확인
+        if (map[curRow][curCol] != 0) {
+            dfs(idx+1); //스킵
+            return;
+        }
+        //거기 들어갈 값 찾기
         for (int i = 1; i < 10; i++) {
-            //스도쿠 룰을 따르는 유효성 검증
-            if (!isAvailable(row,col,i)) continue;
-            //유효성 통과했다면, 도미노 체크
-            //왼쪽 위부터 시작하므로 오른쪽과 아래만 체
+            if (!isAvailableForSudoku(curRow,curCol,i))continue;
+            //스도쿠 룰 통과 했다면,
+            //짝 위치 찾기 : 아래랑 오른쪽만 고려하면 됨
+            int row2;
+            int col2;
             for (int j = 0; j < 2; j++) {
-                int newRow = row+dRow[j];
-                int newCol = col+dCol[j];
-                //맵 밖인지 체크, 이미 점유된 도미노인지 체크
+                row2 = curRow + dRow[j];
+                col2 = curCol + dCol[j];
+                //유효성 검증
+                //일단 값 존재하는지, 맵 나갔는지
                 try {
-                    if (map[newRow][newCol] != 0){
-                        continue;
-                    }
+                    if (map[row2][col2] != 0) continue;
                 } catch (ArrayIndexOutOfBoundsException e){
                     continue;
                 }
-                //맵 안이고 점유되지 않은 위치임
-                for (int k = 1; k < 10; k++) {
-                    //이미 사용했던 도미노면 건너뛰기
-                    if (isMarkedDom[i][k] || !isAvailable(newRow,newCol,k) || k==i) continue;
-                    //사용한적없고 스도쿠에도 맞으면 맵에 배정
-                    map[row][col] = i;
-                    map[newRow][newCol] = k;
-                    isMarkedDom[k][i] = true;
-                    isMarkedDom[i][k] = true;
-                    dfs(idx+1);
-                    map[row][col] = 0;
-                    map[newRow][newCol] = 0;
-                    isMarkedDom[k][i] = false;
-                    isMarkedDom[i][k] = false;
+                //값 찾기
+                for (int h = 1; h < 10; h++) {
+                    //스도쿠 룰 통과하면서, i랑 겹치지 않으면서, 짝도 존재하지 않는 값
+                    if (isAvailableForSudoku(row2, col2, h) && i != h && !marked[i][h]) {
+                        //백트래킹
+                        map[curRow][curCol] = i;
+                        map[row2][col2] = h;
+                        marked[i][h] = true;
+                        marked[h][i] = true;
+                        dfs(idx+1);
+                        map[curRow][curCol] = 0;
+                        map[row2][col2] = 0;
+                        marked[i][h] = false;
+                        marked[h][i] = false;
+                    }
                 }
-            }
 
+            }
 
         }
     }
 
-    public static boolean isAvailable(int row, int col, int value){
-        //가로줄, 세로줄 체크
+    public static boolean isAvailableForSudoku(int row, int col, int value){
+        //가로 체크
+        for (int elem : map[row]){
+            if (elem == value) return false;
+        }
+        //세로 체크
         for (int i = 0; i < 9; i++) {
-            if (map[row][i] == value) return false;
             if (map[i][col] == value) return false;
         }
-        //정사각형 공간 체크
-        int rowOffset = (row/3)*3;
-        int colOffset = (col/3)*3;
-        for (int i = rowOffset; i < rowOffset + 3; i++) {
-            for (int j = colOffset; j < colOffset + 3; j++) {
-                if (map[i][j] == value) return false;
+        //정사각형 체크
+        int rowOffset = (row / 3) * 3;
+        int colOffset = (col / 3) * 3;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (map[rowOffset + i][colOffset + j] == value) {
+                    return false;
+                }
             }
         }
         return true;
     }
+
 
 
 
