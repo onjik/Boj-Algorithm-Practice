@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6863413f-16d1-4456-aef7-3db7f72dc322" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/java/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/java/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1001/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1001/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1001/s2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1001/s2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1002/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1002/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1008/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1008/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p10171/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p10171/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p10172/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p10172/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p10430/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p10430/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1062_가르침/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1062_가르침/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1062_가르침/better/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1062_가르침/better/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p10869/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p10869/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p10926/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p10926/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p12100_2048/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p12100_2048/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1330/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1330/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p13460_구슬탈출2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p13460_구슬탈출2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p14501_퇴사/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p14501_퇴사/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p14681/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p14681/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p18108/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p18108/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p1987_알파벳/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p1987_알파벳/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2480/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2480/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p25083/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p25083/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2525/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2525/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2580/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2580/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2588/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2588/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2753/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2753/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p2884/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p2884/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p3003/s1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p3003/s1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p4574/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p4574/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p9498/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p9498/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/problem/p9663/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/org/practice/problem/p9663/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BojAlgorithm" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2RS4mPjyx2k6d3fIEZO28SFl5rC" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.org.practice.problem.p1259_펠린드롬수.Main">
+    <configuration default="true" type="aws.lambda" factoryName="Remote">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="functionName" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.practice.problem.p13460_구슬탈출2.Main" />
+      <module name="BojAlgorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.practice.problem.p13460_구슬탈출2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.practice.problem.p12100_2048.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.practice.problem.p12100_2048.Main" />
+      <module name="BojAlgorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.practice.problem.p12100_2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.practice.problem.p1259_펠린드롬수.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.practice.problem.p1259_펠린드롬수.Main" />
+      <module name="BojAlgorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.practice.problem.p1259_펠린드롬수.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BojAlgorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BojAlgorithm" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.org.practice.problem.p1259_펠린드롬수.Main" />
+        <item itemvalue="Application.org.practice.problem.p12100_2048.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-26afc3bf" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6863413f-16d1-4456-aef7-3db7f72dc322" name="Changes" comment="" />
+      <created>1687230306973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687230306973</updated>
+      <workItem from="1687230309613" duration="8395000" />
+      <workItem from="1687399281175" duration="6755000" />
+      <workItem from="1687421027197" duration="1000" />
+      <workItem from="1689045942317" duration="7754000" />
+      <workItem from="1693832388183" duration="1168000" />
+      <workItem from="1703146225494" duration="774000" />
+      <workItem from="1703147010253" duration="13000" />
+      <workItem from="1703147030815" duration="127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="map[ry][rx]" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
